@@ -28,12 +28,12 @@ button a{
 .showcase-body .container h1{
     font-size: 65px;
     font-weight: bold;
-    color:white;
+    color:black;
 }
 
 .showcase-body .container p{
     font-size:55px;
-    color:white;
+    color:black;
     font-weight: bold;
 }
 
@@ -71,7 +71,8 @@ span{
 .services .container .icons span{
     width:10%;
     font-size:25px;
-    padding:10px 90px;
+    padding:10px 80px;
+    float: center;
 }
 
 .services .container h1{
