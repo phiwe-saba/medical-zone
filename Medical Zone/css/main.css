@@ -1,82 +1,147 @@
 body{
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    background-color: rgb(34, 183, 233);
 }
 
-header{
-    background-color:dodgerblue;
+.container{
+    padding: 0 20px 150px 100px;
+    margin:0;
+    background-image: url("../images/cover.jpg");
+    background-size:cover;
 }
 
-button a{
-   text-decoration: none;
-   color: black;
+.navbar, .header-link, .header-logo{
+    display:flex;
+    flex-direction: row;
+    padding:10px 5px 0 15px;
 }
 
-/*Showcase section*/
-.showcase{
-    min-height:550px;
-    background-image: url("../images/1.jpg");
-    background-size: cover;
-    opacity:0.7;
-}
-
-.showcase-body .container{
-    text-align:center;
-    padding:110px 0;
-}
-
-.showcase-body .container h1{
-    font-size: 65px;
+.header-logo{
+    flex:2;
     font-weight: bold;
-    color:black;
+    font-size: 28px;
+    text-align: left;
 }
 
-.showcase-body .container p{
-    font-size:55px;
-    color:black;
+.header-link{
+    flex:0.6;
+    text-align:right;
+    font-size: 24px;
+}
+
+.header-link button{
+    background-color: rgb(34, 183, 233);
+    border-radius: 10px;
+    border-style: none;
+    margin-left:15px;
+    font-size: 18px;
+}
+
+.header-link button:hover{
+    background-color: white;
+}
+
+.header-logo a, .header-link a{
+    text-decoration: none;
+    color:white;
+}
+
+/* Hero Section */
+.hero-section{
+    text-align: center;
+    padding:60px;
+}
+
+.hero-section h1{
+    font-size: 56px;
+    color:white;
+}
+
+.hero-section p{
+    font-size:36px;
+    color:white;
     font-weight: bold;
 }
 
-span{
-    color:dodgerblue;
+.hero-section button{
+    background-color: rgb(34, 183, 233);
+    border-style: none;
+    border-radius: 10px;
+    font-size:22px;
+    color:white;
+    padding:5px;
 }
 
-/*About us section*/
-.container .main{
-    min-height:250px;
-    display: flex;
-    padding-top:20px;
+.hero-section button:hover{
+    background-color: white;
+    color:rgb(34, 183, 233);
 }
 
-.container .main .content h1{
-    text-align:center;
-    font-size: 55px;
-}
-
-.container .main .content p{
-    font-size: 15px;
-}
-
-.main .content img{
-    width:85%;
-    float:right;
-}
-
-/*Services section*/
+/* Services */
 .services{
-    min-height:250px;
-    padding:40px;
+    padding:10px;
+    color:white;
+}
+.services h1{
+    text-align: center;
 }
 
-.services .container .icons span{
-    width:10%;
-    font-size:25px;
-    padding:10px 80px;
-    float: center;
+.service-container{
+    display: flex;
 }
 
-.services .container h1{
-    padding:20px;
-    text-align:center;
-    font-size: 55px;
+#stethoscope i, #heartbeat i, #medkit i, #user i{
+    text-align: center;
+    padding-left:120px;
+    margin: 10px;
+    color:black;
+}
+
+#stethoscope p, #heartbeat p, #medkit p, #user p{
+    text-align: center;
+}
+
+#stethoscope, #heartbeat, #medkit, #user{
+    padding: 15px;
+}
+
+/* About Section */
+.about-section{
+    display: flex;
+    background-color: white;
+    padding: 35px 120px;
+}
+
+.about .about-section #about-image img{
+    padding: 30px 0;
+    width: 450px;
+    height: 250px;
+}
+
+.about .about-section .about-logo{
+    padding: 60px 25px;
+    text-justify: newspaper;
+}
+
+.about-logo button{
+    background-color: rgb(34, 183, 233);
+    border-style: none;
+    border-radius: 10px;
+    font-size:22px;
+    color:white;
+    padding:5px;
+}
+
+.about-logo button:hover{
+    background-color: black;
+    color:rgb(34, 183, 233);
+}
+
+footer{
+    padding:15px;
+}
+
+footer p{
+    text-align: center;
 }
