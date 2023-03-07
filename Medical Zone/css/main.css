@@ -1,13 +1,42 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
+    padding:0;
     background-color: rgb(34, 183, 233);
 }
+/*
+header{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
+.nav-links #logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links a{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+*/
 .container{
-    padding: 0 20px 150px 100px;
+    min-height: 90vh;
+    /*padding: 0 20px 150px 100px;*/
     margin:0;
-    /*background-color: grey;*/
+    background-color: grey;
     background-image: url("../images/3.jpg");
     /*background-image: linear-gradient(40deg,rgb(83, 83, 83), rgb(31, 33, 34));*/
     background-size:cover;
@@ -75,9 +104,12 @@ body{
 
 /* Services */
 .services{
-    padding:10px;
+    min-height: 50vh;
+    min-width: 100%;
+    /*padding:10px;*/
     color:white;
 }
+
 .services h1{
     text-align: center;
 }
@@ -88,9 +120,13 @@ body{
 
 #stethoscope i, #heartbeat i, #medkit i, #user i{
     text-align: center;
-    padding-left:120px;
+    padding-left:110px;
     margin: 10px;
     color:black;
+}
+
+#stethoscope h2, #heartbeat h2, #medkit h2, #user h2{
+    text-align: center;
 }
 
 #stethoscope p, #heartbeat p, #medkit p, #user p{
@@ -105,7 +141,9 @@ body{
 .about-section{
     display: flex;
     background-color: white;
-    padding: 35px 120px;
+    min-height: 40vh;
+    padding: 10px 80px 10px 80px;
+    /*padding: 35px 120px;*/
 }
 
 .about .about-section #about-image img{
@@ -135,8 +173,9 @@ body{
 
  /* Appointment Form */
 .app-form{
+    min-height: 100vh;
     background-color: rgb(158, 156, 156);
-    padding: 20px 0 550px 0;
+    /*padding: 20px 0 550px 0;*/
     background-image: url(../images/tools\ 2.jpg);
     background-size: cover;
     opacity: 0.6;
