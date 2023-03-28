@@ -68,41 +68,39 @@
     </div>
 
     <div class="app-form">
-        <div class="container">
-            <div class="center">
+        <form id="appointment-form">
+            <div class="container">
                 <h1><a href="./index.html">Medical Zone</a></h1>
-                <form method="post">
-                  <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>First name</label>
-                  </div>
-                  <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Last name</label>
-                  </div>
-                  <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Email address</label>
-                  </div>
-                  <div class="txt_field">
-                    <input type="text" required>
-                    <span></span>
-                    <label>Mobile number</label>
-                  </div>
-                  <div class="txt_field">
-                    <span></span>
-                    <input type="datetime-local" required>
-                    <label></label>
-                  </div>
-                  <input type="submit" value="Book">
-                </form>
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="date">Appointment Date:</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="time">Appointment Time:</label>
+                  <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                  <label for="reason">Reason for Appointment:</label>
+                  <textarea id="reason" name="reason" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
-
     <footer>
         <div class="container">
             <p>Copyright &#169; Medical Zone 2022</p>
