@@ -23,3 +23,18 @@ xhr.send(formData);
 
 alert
 })
+
+function submitForm(form){
+    swal({
+      title: "Done!",
+      text: "Your application has been submitted!",
+      icon: "success",
+      button: "close",
+    })
+    .then((isOkay) => {
+        if(isOkay) {
+           form.submit();
+        }
+    });
+    return false;
+}

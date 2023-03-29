@@ -68,7 +68,7 @@
     </div>
 
     <div class="app-form">
-        <form id="appointment-form">
+        <form id="appointment-form" onsubmit="return submitForm(this);">
             <div class="container">
                 <h1><a href="./index.html">Medical Zone</a></h1>
                 <div class="form-group">
@@ -96,7 +96,7 @@
                   <textarea id="reason" name="reason" rows="5" required></textarea>
                 </div>
                 <div class="form-group">
-                  <button type="submit">Submit</button>
+                  <button type="submit" >Submit</button>
                 </div>
             </div>
         </form>
@@ -106,5 +106,6 @@
             <p>Copyright &#169; Medical Zone 2022</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
