@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -57,18 +62,25 @@ ul{
     font-weight: bold;
 }
 
+section {
+    height: 80vh;
+}
+/* Header */
 .header{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../images/2.png");
     background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    padding-top: 10px;
-    color: white;
-    height: calc(100vh - 90px);
+    height: 80vh;
 }
 
 .header .container{
     text-align: center;
+}
+
+.header-details {
+    display: flex;
+}
+
+.header-image img {
+    width: 100%;
 }
 
 .header h1{
